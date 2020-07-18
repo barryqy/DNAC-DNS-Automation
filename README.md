@@ -15,6 +15,7 @@ This script can also be run priodically to scan for new device onboarded and upd
    You can use this for test but you wouldn't be able to make changes.
    When you run the script you will get a HTTP 403 code becuase you won't have access to make change on Sandbox.
    
+   ```
    ### Use this file to configure access to DNAC
    ### Replace all values below with your production DNAC
    ### Provided is DNAC sandbox login
@@ -29,6 +30,7 @@ This script can also be run priodically to scan for new device onboarded and upd
 
    ### Optoinal - Domain that all devices belong to, for example ".cisco.com", the hostname of the device would be "device.cisco.com"
    DOMAIN = ".abc.inc"
+   ```
    
 2. Make sure you have all 3 files
    - config.py - stores configuration as described in # How to use item 1
@@ -38,7 +40,9 @@ This script can also be run priodically to scan for new device onboarded and upd
 3. Run "main.py"
 
    - Expected results
-   ### If "No" is chosen update operations will be canceled
+   
+   # If "No" is chosen update operations will be canceled
+   ```
     Parsing device list...
     Found new device, collecting information...
     Found new device, collecting information...
@@ -51,8 +55,9 @@ This script can also be run priodically to scan for new device onboarded and upd
     ================================================================================
     Task canceled, exiting...
     ================================================================================
-   
-   ### If "Yes" is chosen update operations proceed and devices will be updated
+   ```
+   # If "Yes" is chosen update operations proceed and devices will be updated
+   ```
     Parsing device list...
     Parsing device list...
     Found new device, collecting information...
@@ -67,8 +72,9 @@ This script can also be run priodically to scan for new device onboarded and upd
     ================================================================================
     Task completed, exiting...
     ================================================================================
-   
-   ### If you're using the sandbox or don't have access to make changes, the following error will be seen
+   ```
+   # If you're using the sandbox or don't have access to make changes, the following error will be seen
+   ```
     Parsing device list...
     Found new device, collecting information...
     Found new device, collecting information...
@@ -90,5 +96,5 @@ This script can also be run priodically to scan for new device onboarded and upd
     ================================================================================
     Task completed, exiting...
     ================================================================================
-    
+    ```
 Thank you. If there's any issue please feel free to contact the author.
