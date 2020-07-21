@@ -10,6 +10,29 @@ This script is made for situations where DNAC users cannot rely on IP address to
 This script can also be run priodically to scan for new device onboarded and update their device information automatically
 
 # How to use
+Before you start, please make sure you're running python version 3 and up. If you have multiple versions on the system, please run this by specifying Python version, for example, 
+```
+python3 main.py
+```
+Or you can use venv, for example
+```
+python3 -m venv dns-automation
+```
+On Windows, run
+```
+dns-automation\Scripts\activate.bat
+```
+On Linux/Unix or MacOS, run
+```
+source dns-automation/bin/activate
+```
+
+Also, please make sure all the required packages are installed by issueing the following
+```
+pip install -r requirements.txt
+```
+This will make sure the modules are available so you won't see errors during import
+
 1. Configuration file
    Update "Config.py" with information of your environment. Wha'ts currently provided was DNAC Sandbox.
    You can use this for test but you wouldn't be able to make changes.
