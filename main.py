@@ -3,7 +3,6 @@ import json
 import requests
 from config import SCOPE
 import sys
-import json
 import util
 __author__ = 'Barry Yuan <bayuan@cisco.com>'
 
